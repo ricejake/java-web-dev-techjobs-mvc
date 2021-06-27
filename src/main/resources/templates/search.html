@@ -38,28 +38,30 @@
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
     <div>
-        <table th:each="result : ${results}" >
+        <table th:each="job : ${jobs}" >
             <tr>
                 <td>ID:</td>
-                <td th:text="${result.id}"></td></tr>
+                <td th:text="${job.id}"></td></tr>
             <tr>
                 <td>NAME:</td>
-                <td th:text="${result.name}"></td></tr>
+                <td th:text="${job.name}"></td></tr>
             <tr>
                 <td>EMPLOYER:</td>
-                <td th:text="${result.employer}"></td></tr>
+                <td th:text="${job.employer}"></td></tr>
             <tr>
                 <td>LOCATION:</td>
-                <td th:text="${result.location}"></td></tr>
+                <td th:text="${job.location}"></td></tr>
             <tr>
                 <td>POSITION TYPE:</td>
-                <td th:text="${result.positionType}"></td></tr>
+                <td th:text="${job.positionType}"></td></tr>
             <tr>
                 <td>SKILL:</td>
-                <td th:text="${result.coreCompetency}"></td>
+                <td th:text="${job.coreCompetency}"></td>
             </tr>
         </table>
     </div>
+
+
 
 </div>
 </body>
